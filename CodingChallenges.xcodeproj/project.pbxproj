@@ -13,7 +13,21 @@
 		770E9403299E83FF00963DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770E9401299E83FF00963DB5 /* Main.storyboard */; };
 		770E9405299E840000963DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770E9404299E840000963DB5 /* Assets.xcassets */; };
 		770E9408299E840000963DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770E9406299E840000963DB5 /* LaunchScreen.storyboard */; };
+		770E9410299E844100963DB5 /* StringsChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E940F299E844100963DB5 /* StringsChallenges.swift */; };
+		770E9418299E873200963DB5 /* CodingChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E9417299E873200963DB5 /* CodingChallengesTests.swift */; };
+		770E9420299E893300963DB5 /* StringsChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E940F299E844100963DB5 /* StringsChallenges.swift */; };
+		ED76B69E2A30F4F400DB037E /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = ED76B69D2A30F4F400DB037E /* Readme.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		770E9419299E873200963DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 770E93F0299E83FF00963DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 770E93F7299E83FF00963DB5;
+			remoteInfo = CodingChallenges;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		770E93F8299E83FF00963DB5 /* CodingChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,21 @@
 		770E9404299E840000963DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		770E9407299E840000963DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770E9409299E840000963DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		770E940F299E844100963DB5 /* StringsChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsChallenges.swift; sourceTree = "<group>"; };
+		770E9415299E873200963DB5 /* CodingChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		770E9417299E873200963DB5 /* CodingChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengesTests.swift; sourceTree = "<group>"; };
+		ED76B69D2A30F4F400DB037E /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		770E93F5299E83FF00963DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770E9412299E873200963DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				770E93FA299E83FF00963DB5 /* CodingChallenges */,
+				770E9416299E873200963DB5 /* CodingChallengesTests */,
 				770E93F9299E83FF00963DB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				770E93F8299E83FF00963DB5 /* CodingChallenges.app */,
+				770E9415299E873200963DB5 /* CodingChallengesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +90,26 @@
 				770E9404299E840000963DB5 /* Assets.xcassets */,
 				770E9406299E840000963DB5 /* LaunchScreen.storyboard */,
 				770E9409299E840000963DB5 /* Info.plist */,
+				ED76B69C2A30F48E00DB037E /* Strings */,
 			);
 			path = CodingChallenges;
+			sourceTree = "<group>";
+		};
+		770E9416299E873200963DB5 /* CodingChallengesTests */ = {
+			isa = PBXGroup;
+			children = (
+				770E9417299E873200963DB5 /* CodingChallengesTests.swift */,
+			);
+			path = CodingChallengesTests;
+			sourceTree = "<group>";
+		};
+		ED76B69C2A30F48E00DB037E /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				770E940F299E844100963DB5 /* StringsChallenges.swift */,
+				ED76B69D2A30F4F400DB037E /* Readme.md */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +132,24 @@
 			productReference = 770E93F8299E83FF00963DB5 /* CodingChallenges.app */;
 			productType = "com.apple.product-type.application";
 		};
+		770E9414299E873200963DB5 /* CodingChallengesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770E941B299E873200963DB5 /* Build configuration list for PBXNativeTarget "CodingChallengesTests" */;
+			buildPhases = (
+				770E9411299E873200963DB5 /* Sources */,
+				770E9412299E873200963DB5 /* Frameworks */,
+				770E9413299E873200963DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				770E941A299E873200963DB5 /* PBXTargetDependency */,
+			);
+			name = CodingChallengesTests;
+			productName = CodingChallengesTests;
+			productReference = 770E9415299E873200963DB5 /* CodingChallengesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +162,10 @@
 				TargetAttributes = {
 					770E93F7299E83FF00963DB5 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					770E9414299E873200963DB5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 770E93F7299E83FF00963DB5;
 					};
 				};
 			};
@@ -116,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				770E93F7299E83FF00963DB5 /* CodingChallenges */,
+				770E9414299E873200963DB5 /* CodingChallengesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +193,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED76B69E2A30F4F400DB037E /* Readme.md in Resources */,
 				770E9408299E840000963DB5 /* LaunchScreen.storyboard in Resources */,
 				770E9405299E840000963DB5 /* Assets.xcassets in Resources */,
 				770E9403299E83FF00963DB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770E9413299E873200963DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,11 +216,29 @@
 			files = (
 				770E9400299E83FF00963DB5 /* ViewController.swift in Sources */,
 				770E93FC299E83FF00963DB5 /* AppDelegate.swift in Sources */,
+				770E9410299E844100963DB5 /* StringsChallenges.swift in Sources */,
 				770E93FE299E83FF00963DB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		770E9411299E873200963DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770E9420299E893300963DB5 /* StringsChallenges.swift in Sources */,
+				770E9418299E873200963DB5 /* CodingChallengesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		770E941A299E873200963DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 770E93F7299E83FF00963DB5 /* CodingChallenges */;
+			targetProxy = 770E9419299E873200963DB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		770E9401299E83FF00963DB5 /* Main.storyboard */ = {
@@ -336,6 +430,50 @@
 			};
 			name = Release;
 		};
+		770E941C299E873200963DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5KCJK23K5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Globant.CodingChallengesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingChallenges.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodingChallenges";
+			};
+			name = Debug;
+		};
+		770E941D299E873200963DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5KCJK23K5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Globant.CodingChallengesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingChallenges.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodingChallenges";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +491,15 @@
 			buildConfigurations = (
 				770E940D299E840000963DB5 /* Debug */,
 				770E940E299E840000963DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		770E941B299E873200963DB5 /* Build configuration list for PBXNativeTarget "CodingChallengesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770E941C299E873200963DB5 /* Debug */,
+				770E941D299E873200963DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
