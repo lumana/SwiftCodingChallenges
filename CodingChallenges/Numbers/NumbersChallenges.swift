@@ -9,7 +9,7 @@ import Foundation
 
 class NumbersChallenges {
     
-    func FizzBuzz() {
+    func printFizzBuzz() {
         
         for number in 1...100 {
             if number % 3 == 0 && number % 5 == 0 {
@@ -23,6 +23,23 @@ class NumbersChallenges {
                 print(number)
             }
         }
+    }
+    
+    func generateRandomInRange(minimum: Int, maximun: Int) -> Int {
+        return Int.random(in: minimum...maximun)
+    }
+    
+    func myPow(number: Int, power: Int) -> Int {
+        
+        guard number > 0, power > 0 else { return 0 }
+        
+        var result = number
+        
+        for _ in 1..<power  {
+            result = result * number
+        }
+        
+        return result
     }
     
 }
